@@ -1,0 +1,121 @@
+.main{
+    display: grid;
+    grid-template-rows: auto auto; 
+    justify-content: space-around; 
+}
+
+.main__item{
+    margin-left: 25%;
+    margin-top: 7%;
+    margin-right: 2em;
+    margin-bottom: 0em;
+}
+
+.main__item2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.main__table{
+    margin: 0em 3% 3em 1em;
+}
+
+.main__about{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.main__text{
+    max-width: 10em;
+    margin: 2em;
+}
+.main__header{
+    margin-bottom: 0.5em;
+    padding-left: 20%;
+}
+.table{
+    width: 30em;
+    padding-top: 3em;
+}
+
+.row{
+    border-bottom: 1.5px solid #ffa929;
+}
+
+
+
+.text--color{
+    color: #ffffff;
+}
+.main__subheader{
+    margin-left: 5em;
+}
+
+.main__item2 .main__table .row .key{
+    background-color: rgb(96, 94, 94);
+
+}
+.main__item2 .main__table .row .value{
+    width: 4em;
+    padding-left: 0;
+
+}
+.main__textcontanier{
+    border: 1px solid #ffa929;
+    border-radius: 2em 0 2em 0;
+    height: auto; 
+    margin: 2em;
+    width: 7em;
+    height: 8em;
+    padding: 10px;
+    box-shadow: 3px 0px 15px rgb(164, 163, 163);
+    color: black!important;
+    font-size: 1.5rem;
+    font-weight:bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.textNone{
+    display: none;
+
+
+}
+
+
+
+.main__subitem2 .main__subtitle,
+.main__subheader .anime{
+    transition: ease 0.5s;   
+    padding-bottom: 1em;
+
+}
+.main__textcontanier .anime{
+    transition: ease 0.5s;   
+    padding-bottom: 1em;
+}
+
+.main__subheader .anime:nth-of-type(1):hover {
+    color: #f3a93d;
+}
+.main__subheader .anime:nth-of-type(2):hover {
+    color: #f3a93d;
+}
+.main__subheader .anime:nth-of-type(3):hover {
+    color: #f3a93d;
+}
+
+.main__subheader .anime:hover {
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.main__textcontanier .anime:hover {
+    color: #f3a93d;
+    font-size: large;
+    font-style: italic;
+}

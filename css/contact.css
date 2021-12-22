@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__section1{
+    max-width: 20em;
+    margin: 15% 10% 10% 0;
+ 
+ 
+}
+
+.form{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 3em;
+    
+}
+.textNone{
+    display: none;
+
+
+}
+
+
+.btn{
+    max-width: 10em;  
+    border-radius: 0.5em;
+    height: auto;
+}
+.main .form .form__formIn{
+    width: 20em;
+    margin: 1em 0;
+    border-radius: 0.75em;
+    height: 2em;
+    border: none;
+   
+}
+.gendercontainer{
+    margin: 0.25em;
+}
+.textMedium{
+    padding-left: 0.25em;
+}
+.main__header{
+    margin-bottom: 0.5em;
+}
+
+
+
+.textNone{
+    display: none;
+
+
+}

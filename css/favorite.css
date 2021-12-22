@@ -1,0 +1,76 @@
+.main{
+    display: grid;
+    grid-template-columns: auto ;
+    justify-content:center;
+    width: 100%;
+}
+.main__items1{
+    margin: 2em 2em 1em 35%;
+}
+.main__title:hover {
+    color: #f3a93d;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.main__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2em 2em 1em 1em;
+
+
+}
+
+.main__subtext{
+    padding-top: 3em;
+    width: 25em;
+    margin-left: 1.5em;
+    margin-right: 4em;
+
+}
+.main__text{
+    margin-left: 2em;
+}
+
+
+.main__subtitle{
+    margin-bottom: 0.5em;
+}
+
+.main__fig{
+    
+    height: auto; 
+    margin: 2em;
+    background-image: url(../images/gaphoto.png);
+    width: 13em;
+    height: 15em;
+    padding: 10px;
+    box-shadow: 3px 0px 15px rgb(164, 163, 163);
+    color: black!important;
+    font-size: 1.5rem;
+    font-weight:bold;
+    border-radius: 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main__figcap{
+    margin-left: 4em;
+}
+
+.main__photo{
+
+    width: 11.5em;
+    height: 12em;
+    text-align: center;
+    border-radius: 1em;
+
+}
+.textNone{
+    display: none;
+
+
+}
+
+
