@@ -1,0 +1,113 @@
+.body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-areas:
+    "nav"
+    "pageTitle"
+    "projectTags"
+    "projects"
+    "footer";
+  background-color: var(--background);
+}
+
+.pageHeader {
+  grid-area: pageTitle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background: transparent;
+}
+
+.pageHeader__title {
+  color: var(--onBackground);
+  opacity: var(--primaryText);
+}
+
+.projectTags {
+  grid-area: projectTags;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background-color: transparent;
+}
+
+.projectTags__tag {
+  padding: 0.75rem;
+  background-color: var(--primary);
+  border-radius: 1.5rem;
+}
+
+.projectTags__button {
+  color: var(--onPrimary);
+  opacity: var(--primaryText);
+  background: transparent;
+  border: none;
+}
+
+.projectCategory__title {
+  padding: 0rem 1rem;
+  color: var(--onSurface);
+  opacity: var(--primaryText);
+}
+
+.projects {
+  grid-area: projects;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: var(--outlineSize) solid var(--outline);
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: rgb(0 0 0 / 3%) 0rem 0rem 1rem 0rem;
+  gap: 1rem;
+  align-items: start;
+  justify-items: start;
+  min-width: 60rem;
+  justify-content: start;
+}
+
+@media screen and (max-width: 60rem) {
+  .projects {
+    grid-template-columns: auto auto;
+    min-width: 40rem;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .projects {
+    grid-template-columns: auto;
+    min-width: 20rem;
+  }
+}
+
+.projectCard {
+  background-color: var(--surface);
+  border-radius: 1rem;
+  border: var(--outlineSize) solid var(--outline);
+  box-shadow: rgb(0 0 0 / 8%) 0rem 0rem 1rem 0rem;
+  max-width: 20em;
+}
+
+.projectCard__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.projectCard__body {
+  padding: 1rem;
+  color: var(--onSurface);
+  opacity: var(--primaryText);
+}
+
+.d-none {
+  display: none;
+}

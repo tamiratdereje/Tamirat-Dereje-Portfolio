@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/portfoilo.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Portfoilo</title>
+  </head>
+  <body class="body lightTheme">
+    <nav class="nav">
+      <span class="nav__logo" aria-hidden="true">Tamirat Dereje</span>
+      <button
+        id="nav-hamburger"
+        title="hamburger"
+        type="button"
+        class="nav__hamburger"
+      >
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+          aria-hidden="true"
+        />
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item">
+          <a class="nav__link" href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about.html">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contact.html">Contact</a>
+        </li>
+       
+       
+        <li class="nav__item nav__item--active">
+          <a class="nav__link" href="portfoilo.html">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="services.html">Services</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="pageHeader">
+      <h1 class="pageHeader__title">Projects</h1>
+    </header>
+    <nav class="projectTags">
+      <div class="projectTags__tag">
+        <button
+          type="button"
+          class="projectTags__button"
+          id="allTag"
+          aria-label="View all projects"
+        >
+          All
+        </button>
+      </div>
+      <div class="projectTags__tag">
+        <button
+          type="button"
+          class="projectTags__button"
+          id="cppTag"
+          aria-label="View C++ projects only"
+        >
+          Spring boot
+        </button>
+      </div>
+      <div class="projectTags__tag">
+        <button
+          type="button"
+          class="projectTags__button"
+          id="webDevTag"
+          aria-label="View web development projects only"
+        >
+          Flutter
+        </button>
+      </div>
+      <div class="projectTags__tag">
+        <button
+          type="button"
+          class="projectTags__button"
+          id="3dGraphicsTag"
+          aria-label="View 3d graphics projects only"
+        >
+          3D Graphics
+        </button>
+      </div>
+    </nav>
+    <main class="projects">
+      <article class="projectCard" projectType="c++">
+        <a href="https://github.com/tamiratdereje/sotwareProject">
+          <img
+          src="../images/bth.png"
+          alt="screenshot of afro"
+          class="projectCard__image"
+          aria-hidden="true"
+        />
+        </a>
+        
+        <p class="projectCard__body">
+          BTH;  is the web application project in which customer find technician to get their devices fixed.
+        </p>
+      </article>
+      <article class="projectCard" projectType="web-dev">
+        <a href="https://github.com/tamiratdereje/Patient-registration-and-Appointment-scheduling-system">
+          <img
+          src="../images/afya2.png"
+          alt="screenshot of Days"
+          class="projectCard__image"
+          aria-hidden="true"
+        />
+        </a>
+        <p class="projectCard__body">
+          Patient registration and Appointment scheduling system is mobile application in which a patient 
+          can schedule his or her medical appointment.
+        </p>
+      </article>
+      
+      <article class="projectCard" projectType="3D-graphics">
+        <a href="https://github.com/tamiratdereje/RENDERING-HOUSE_GRAPHICS">
+          <img
+          src="../images/graphics.png"
+          alt="screenshot of the opengl scene"
+          class="projectCard__image"
+          aria-hidden="true"
+        />
+        </a>
+        
+        <p class="projectCard__body">
+          A modelling of a house in 3D using opengl with python.
+        </p>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2021, All rights reserved</p>
+    </footer>
+  </body>
+  <script src="../js/script.js"></script>
+  <script src="../js/portfoilo.js"></script>
+</html>

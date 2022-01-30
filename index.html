@@ -1,145 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <h1 style="display: none;">home</h1>
-    <link type="text/css" rel="stylesheet" href="css/common.css">
-    <link type="text/css" rel="stylesheet" href="css/home.css">
-
-    
-
-</head>
-<body class="main__wrapper">
-    <nav class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__item "><a class="navigation__link navigation__link--active fontFamily textMedium" href="index.html">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/GALLERY.html">Gallery</a></li>
-            <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/FAVORITE.html">Favorite</a></li>
-            <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/SERVICE.html">Service</a></li>
-            <li class="logo">        
-                <figure class="header__figure">
-                <img width="280px" class="header__logo" role="presentation" src="images/MAINLOGO.png" aria-hidden="true" alt="logo Of My Page">
-                </figure>
-            </li>
-            <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/RESUME.html">Resume</a></li>
-            <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/CONTACT.html">Contact</a></li>
-            <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/ABOUT.html">About</a></li>
-        </ul>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Tamirat Dereje</title>
+  </head>
+  <body class="body lightTheme">
+    <nav class="nav">
+      <span class="nav__logo" aria-hidden="true">Tamirat Dereje</span>
+      <button
+        id="nav-hamburger"
+        title="hamburger"
+        type="button"
+        class="nav__hamburger"
+      >
+        <img
+          class="nav__hamburgerIcon"
+          src="images/bars-solid.svg"
+          alt="hamburger menu icon"
+        />
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item nav__item--active">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="html/about.html">About</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="html/contact.html">Contact</a>
+        </li>
+        
+        
+        <li class="nav__item">
+          <a class="nav__link" href="html/portfoilo.html">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="html/services.html">Services</a>
+        </li>
+      </ul>
     </nav>
-
-    <header class="header__mob">
-        <div class="container">
-            <div class="header__mob__row">
-
-                <figure class="header__figure">
-                    <img width="280px" class="header__logo" role="presentation" src="images/MAINLOGO.png" aria-hidden="true" alt="logo Of My Page">
-                </figure>
-
-                <button type="button" class="nav-toggler" ><em class="textNone">ro</em>
-                    <span></span>
-                </button>
-
-                <nav class="navigation__mob">
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a class="navigation__link navigation__link--active fontFamily textMedium" href="index.html">Home</a></li>
-                        <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/GALLERY.html">Gallery</a></li>
-                        <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/FAVORITE.html">Favorite</a></li>
-                        <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/SERVICE.html">Service</a></li>
-                        <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/RESUME.html">Resume</a></li>
-                        <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/CONTACT.html">Contact</a></li>
-                        <li class="navigation__item"><a class="navigation__link fontFamily textMedium" href="html/ABOUT.html">About</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <script src="js/menu.js"></script>
-
-
-    <main class="main">
-        <section class="main__item">
-            <figure class="main__figure">
-                <img class="main__image" src="images/homephoto.png" width="100%" alt="main Photo">
-            </figure>
-        </section>
-
-        <section class="main__item">
-
-            <section class="main__subitem">
-                <h2 class="main__title title fontFamily"><span class="anime">Hi </span> <span class="anime">I'm </span><span class="anime">Tamirat</span><span class="anime"> Dereje </span></h2><br>
-                <p class="main__aboutme textMedium fontFamily" >Software Engineer Student at Addis Ababa University</p><br><p class="main__aboutme textMedium fontFamily"> "Truth can only be found in one place: the code" </p>
-            </section>
-
-            <section class="main__subitem2">
-                <h3 class="main__subtitle title fontFamily"> --Interested in-- </h3><br>
-                <ul class="main__list">
-                    <li class="main__work fontFamily textMedium">--Frontend Developement-- </li>
-                    <li class="main__work fontFamily textMedium">--Photo Editing-- </li>
-                    <li class="main__work fontFamily textMedium">--App Developing-- </li>
-                </ul>
-            </section>
-            
-        </section>
-
+    <img
+      class="image"
+      src="images/tamirat.png"
+      alt="photo of tamirat"
+      aria-hidden="true"
+    />
+    <main class="profile">
+      <h1 class="profile__title">
+        Hi,<br />
+        I'm Tamirat Dereje
+      </h1>
+      <p class="profile__body">
+        Software Engineer Student at Addis Ababa University, and 
+        flutter developer and also backend developer with Node js.
+      </p>
     </main>
-
     <footer class="footer">
-
-
-        <section class="footer__item">
-            <p class="footer__text fontFamily">Ⓒcopyright2021 Allright reserved</p>  
-        </section>
-        
-
-        <section class="footer__item">
-            <img src="images/sample.jfif" aria-hidden="true" style="width: 3opx; height: 30px; border-radius: 15px; padding-right: 10px;" alt="tame's profile picture">
-            <div fontFamily textMedium >Tamirat Dereje<br> Write Your comment please</div>       
-        </section>
-        <section class="footer__item">
-            <form class="footer__form" action="#" method="get">
-                    <label for="email">email</label>
-                    <input id="email" class="form__email" type="email" name="Email"><br>
-                    <label for="comment">comment</label>
-                    <textArea id="comment"  class="form__comment" name="comment"  rows="4"></textArea><br>
-                <button class="btn fontFamily textMedium" value="submit" >submit</button>
-            </form>
-
-        </section>
-
-        <section class="footer__item">
-            <p class="title title--small fontFamily" >  organization</p>
-            <ul class="footer__list">
-                <li class="footer__listitem fontFamily textMedium"><a class="footer__link fontFamily textMedium" href="#"> AAU </a></li>
-                <li class="footer__listitem fontFamily textMedium"><a class="footer__link fontFamily textMedium" href="#"> AAiT </a></li>
-                <li class="footer__listitem fontFamily textMedium"><a class="footer__link fontFamily textMedium" href="https://a2sv.org/"> A2SV </a></li>
-            </ul>
-
-        </section>
-       
-
-        <section class="footer__item" >
-            <iframe class="footer__map" seamless="seamless" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=addis%20ababa%206%20kilo%20kenedy+(My%20location)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        </section>
-        
-        
-        <section class="footer__item">
-            
-            <p class="footer__socialtext fontFamily textMedium">social media</p>
-            <ul class="footer__socialMedia__item">
-                <li class="footer__listitem"><a class="footer__socialMedia__link" href="#"> <img class="icon icon--small" src="images/instaaaaa.png" aria-hidden="true" alt="instagram" aria-label="footer__socialMedia__link"></a></li>
-                <li class="footer__listitem"><a class="footer__socialMedia__link" href="#"> <img class="icon icon--small" src="images/twiiter.png" aria-hidden="true" alt="twitter" aria-label="footer__socialMedia__link"></a></li>
-                <li class="footer__listitem"><a class="footer__socialMedia__link" href="#"> <img class="icon icon--small" src="images/emaillll.jpg" aria-hidden="true" alt="Email" aria-label="footer__socialMedia__link"></a></li>
-                <li class="footer__listitem"><a class="footer__socialMedia__link" href="#"> <img class="icon icon--small" src="images/facebooook.png" aria-hidden="true" alt="facebook" aria-label="footer__socialMedia__link"></a></li> 
-            </ul>
-
-        </section>
-
-
-        
-    </footer>    
-</body>
+      <p class="footer__text" aria-label="copyright">
+        &copy; 2021, All rights reserved
+      </p>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
 </html>

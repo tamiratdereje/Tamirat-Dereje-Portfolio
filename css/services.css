@@ -1,0 +1,88 @@
+.body {
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "services" "footer";
+  background-color: var(--background);
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* gap: 1rem; */
+  /* padding: 1rem; */
+  grid-area: services;
+}
+
+.serviceRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  background-color: var(--surface);
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.servicesList .serviceRow:nth-child(even) {
+  grid-template-areas: "image text";
+}
+.servicesList .serviceRow:nth-child(odd) {
+  grid-template-areas: "text image";
+}
+
+.serviceRow__body {
+  max-width: 40rem;
+  padding: 1rem;
+  grid-area: text;
+}
+
+.serviceRow__title {
+  color: var(--onSurface);
+  opacity: var(--primaryText);
+  padding: 1rem 0rem;
+  font-size: 2rem;
+}
+
+.serviceRow__text {
+  color: var(--onSurface);
+  opacity: var(--secondaryText);
+}
+
+.serviceRow__image {
+  width: 100%;
+  max-height: 20rem;
+  height: auto;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.serviceRow__imageWrapper {
+  width: 100%;
+  display: flex;
+  grid-area: image;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 56.25rem) {
+  .servicesList .serviceRow:nth-child(even) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "image" "text";
+  }
+  .servicesList .serviceRow:nth-child(odd) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "image" "text";
+  }
+}
