@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Contact</title>
+  </head>
+  <body class="body lightTheme">
+    <nav class="nav">
+      <span class="nav__logo" aria-hidden="true">Tamirat Dereje</span>
+      <button
+        id="nav-hamburger"
+        title="hamburger"
+        type="button"
+        class="nav__hamburger"
+      >
+        <img
+          class="nav__hamburgerIcon"
+          src="../images/bars-solid.svg"
+          alt="hamburger menu icon"
+        />
+      </button>
+      <ul class="nav__list" id="nav-list">
+        <li class="nav__item">
+          <a class="nav__link" href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about.html">About</a>
+        </li>
+        <li class="nav__item nav__item--active">
+          <a class="nav__link" href="contact.html">Contact</a>
+        </li>
+      
+     
+        <li class="nav__item">
+          <a class="nav__link" href="portfoilo.html">Portfolio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="services.html">Services</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="contactMe">
+        <h1 class="contactMe__header">Contact Me</h1>
+        <p class="contactMe__text">
+          I am available for hire and open to any ideas of cooperation. If you have any questions, please feel free to contact me. I will be happy to answer your questions.
+        </p>
+        <div class="socialMedias">
+          <a title="Contact me on facebook" href="#" class="socialMedia__btn">
+             <img class="socialMedia__icon"
+          src="../images/facebook-f-brands.svg"
+          alt="facebook logo" aria-hidden="true"/>
+          </a>
+          <a  title="Follow me on twitter" href="#" class="socialMedia__btn">
+            <img class="socialMedia__icon"
+          src="../images/twitter-brands.svg"
+          alt="twitter logo" aria-hidden="true"/>
+          </a>
+          <a title="Follow me on instagram" href="#" class="socialMedia__btn">
+            <img class="socialMedia__icon"
+          src="../images/instagram-brands.svg"
+          alt="instagram logo" aria-hidden="true"/>
+          </button>
+          <a  title="Follow me on linkedin" href="https://www.linkedin.com/in/tamirat-dereje-2a8b09234/" class="socialMedia__btn">
+            <img class="socialMedia__icon"
+          src="../images/linkedin-in-brands.svg"
+          alt="linkedin logo" aria-hidden="true"/>
+          </a>
+        </div>
+        </div>
+        <form class="form" aria-label="Contact form">
+          <h1 class="form__title">Have A Project Or Want To Talk?</h1>
+          <div class="form__inputGrid">
+          <label id="name-label" for="name">Name</label><input class="form__input" id="name" type="text" name="name" placeholder="Enter your name here" aria-labelledby="name-label"/>
+          <label id="email-label" for="email">Email</label><input  class="form__input" id="email" type="email" name="email"  placeholder="Enter your email here" aria-labelledby="email-label"/>
+          <label id="message-label" for="message">Message</label><textarea class="form__input" name="message" id="message" cols="40" rows="7" placeholder="Enter your message here" aria-labelledby="message-label"></textarea>
+          </div>
+          <button class="form__subBtn"type="submit" aria-label="send message">Send</button>
+        </form>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2021, All rights reserved</p>
+    </footer>
+  </body>
+  <script src="../js/script.js"></script>
+</html>
